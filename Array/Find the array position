@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int arr[5];
+    int i,pos,value;
+    bool found=false;
+    for(i=0;i<5;i++)
+    {
+        cout<<"enter the arrays:";
+        cin>>arr[i];
+    }
+
+     cout<<"enter the value to find:";
+        cin>>value;
+        for(i=0;i<5;i++)
+        {
+            if(arr[i]==value)
+            {
+                cout<<"Element found at position:"<<i<<endl;
+                found=true;
+                break;
+
+            }
+        }
+        if(found==false)
+        {
+            cout<<"element not found:";
+        }
+}
