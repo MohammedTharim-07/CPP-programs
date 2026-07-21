@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+class Student {
+public:
+int marks;
+// Member function
+void display() {
+cout << "Marks = " << marks;
+};
+
+}
+int main() {
+Student s1;   // object creation
+
+s1.marks = 90;   // assigning value
+s1.display();
+ // calling member function
+return 0;
+}
