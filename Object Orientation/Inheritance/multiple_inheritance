@@ -1,0 +1,46 @@
+#include<iostream>
+using namespace std;
+class smart_phone
+{
+public:
+    void pixels()
+    {
+        cout<<"100 mega pixel:"<<endl;
+    }
+};
+
+class spex
+{
+public:
+    void camera()
+    {
+        cout<<"zeis:"<<endl;
+    }
+};
+
+class quiz:public smart_phone,public spex
+{
+public:
+    void name()
+    {
+        cout<<"this is vivo:"<<endl;
+    }
+    void brand()
+    {
+      cout<<"this is vivo x300:"<<endl;
+    }
+    void price()
+    {
+      cout<<"cost around 1 lakh:";
+    }
+};
+int main()
+{
+    quiz p1;
+    p1.pixels();
+    p1.camera();
+    p1.name();
+    p1.brand();
+    p1.price();
+    return 0;
+}
