@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+
+    class vehicle
+    {
+    public:
+        void brand()
+        {
+            cout<<"This is the audi"<<endl;
+        }
+        void speed()
+        {
+            cout<<"This car can go 300mhr"<<endl;
+        }
+    };
+
+    //derived class
+    class benz:public vehicle{
+public:
+
+        void model()
+        {
+        cout<<"This is e class"<<endl;
+    }
+    void price()
+    {
+        cout<<"cost around 2 cr"<<endl;
+    }
+    };
+
+ int main()
+ {
+   benz E;
+   E.brand();
+   E.speed();
+   E.model();
+   E.price();
+ }
+
