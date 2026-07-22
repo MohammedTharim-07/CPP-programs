@@ -1,0 +1,56 @@
+#include<iostream>
+using namespace std;
+ class hospital
+ {
+public:
+    string hospitalss;
+    void hospitals()
+    {
+        cout<<"Hospital:";
+        cin>>hospitalss;
+    }
+ };
+
+ class doctor_detail:public hospital
+ {
+ public:
+     string name_doc;
+     string specilization_in;
+    void name()
+    {
+        cout<<"doctor name:";
+        cin>>name_doc;
+    }
+    void specilization()
+    {
+        cout<<"Doctor specilization:";
+        cin>>specilization_in;
+    }
+ };
+
+ class doc_det:public doctor_detail
+ {
+ public:
+     int experiences;
+     float KD_ratio;
+    void experience ()
+    {
+        cout<<"Doctor experince:";
+        cin>>experiences;
+    }
+    void KD_rate()
+    {
+        cout<<"Doctor kill ratio:";
+        cin>>KD_ratio;
+    }
+ };
+int main()
+{
+    doc_det d1;
+    d1.hospitals();
+    d1.name();
+    d1.specilization();
+    d1.experience();
+    d1.KD_rate();
+
+}
