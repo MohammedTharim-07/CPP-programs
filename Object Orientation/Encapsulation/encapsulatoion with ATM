@@ -1,0 +1,57 @@
+#include<iostream>
+using namespace std;
+
+class ATM
+{
+private:
+    int  Available_balance=0;
+public:
+    int deposit=0,withdraw=0,balance_enquiry;
+
+   // cout<<"Deposit"<<endl;
+    //cout<<"Withdraw"<<endl;
+    //cout<<"Balance Enquiry"<<endl;
+
+    void deposit_1()
+    {
+        cout<<"Enter the deposit amount:";
+        cin>>deposit;
+        cout<<"deposit successful"<<endl;
+        Available_balance+=deposit;
+
+
+
+        cout<<"enter withdraw amount:";
+        cin>>withdraw;
+        if(Available_balance>=withdraw)
+    {
+        Available_balance-=withdraw;
+        cout<<"Amount withdrawed successfully:"<<endl;
+        cout<<"Available balnce:"<<Available_balance<<endl;
+    }
+    else
+    {
+        cout<<"Insufficient balance:"<<endl;
+    }
+
+    cout<<"Enter number 1 for balance enquiry:";
+    cin>>balance_enquiry;
+
+    if(balance_enquiry==1)
+    {
+        cout<<"Available Balance:"<<Available_balance<<endl;
+    }
+else{
+    cout<<"wrong pass:";
+}
+    }
+};
+
+
+int main()
+{
+    ATM a;
+    a.deposit_1();
+    a.withdraw;
+   // a.Available_balance;
+}
